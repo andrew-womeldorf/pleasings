@@ -197,7 +197,7 @@ def container_image(
         {CONFIG.SKOPEO_TOOL} copy -q {img_loc} "docker-daemon:`cat $SRC`"
         docker run -it `cat $SRC` \\\$@
     else
-        {CONFIG.PODMAN_TOOL} run -it {img_loc} \\\$@
+        podman run -it {img_loc} \\\$@
     fi'''
     sh_cmd(
         name=name + '_run',
