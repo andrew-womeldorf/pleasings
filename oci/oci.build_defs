@@ -251,4 +251,4 @@ def _format_exec_list(cmds: list) -> str:
 
 CONFIG.setdefault('BUILDAH_TOOL', 'buildah')
 CONFIG.setdefault('SKOPEO_TOOL', 'skopeo')
-CONFIG.setdefault('PODMAN_TOOL', 'podman')
+CONFIG.setdefault('PODMAN_TOOL', 'docker')
